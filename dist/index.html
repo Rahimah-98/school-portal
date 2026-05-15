@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo.png"
+      type="image/x-icon" />
+    <title>Aurora Academy</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="navbar">
+        <a class="logo" href="/">
+          <img src="./assets/img/logo.png" alt="Logo" class="logo-img" />
+          <span class="logo-text">Aurora Academy</span>
+        </a>
+
+        <!-- MENU -->
+        <button class="menu-btn" id="menuBtn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+          <li>
+            <a href="pages/courses.html">Courses</a>
+          </li>
+          <li>
+            <a href="pages/profile.html">Profile</a>
+          </li>
+          <li>
+            <a href="pages/contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="hero">
+          <div class="hero-details">
+            <span class="hero-subtitle">WELCOME TO</span>
+            <h1 id="hero-title">Aurora <span>Academy</span></h1>
+            <p>
+              Build your future with modern education, experienced teachers, and
+              a student-focused environment designed for growth.
+            </p>
+          </div>
+
+          <div class="hero-img">
+            <img
+              src="./assets/img/school.png"
+              alt="School image"
+              loading="lazy"
+              class="school-img" />
+          </div>
+        </section>
+
+        <section class="enrollment-wrapper">
+          <div class="enroll-card">
+            <div class="card-title">
+              <div class="icon-circle">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <h2>Student Enrollment</h2>
+            </div>
+
+            <form class="enroll-form" id="enrollForm">
+              <div class="input-row">
+                <div class="input-group">
+                  <label>Student Name</label>
+                  <input
+                    type="text"
+                    placeholder="Enter full name"
+                    required
+                    id="studentName" />
+                </div>
+
+                <div class="input-group">
+                  <label>Age</label>
+                  <input
+                    type="number"
+                    placeholder="Enter age"
+                    required
+                    id="studentAge" />
+                </div>
+              </div>
+
+              <div class="input-group">
+                <label>Grade Level</label>
+                <select required id="studentGrade">
+                  <option>Select grade level</option>
+                  <option>Grade 10</option>
+                  <option>Grade 11</option>
+                </select>
+              </div>
+
+              <button type="submit" class="enroll-btn" id="enrollBtn">
+                Enroll Student
+                <i class="fa-solid fa-user-plus"></i>
+              </button>
+            </form>
+            <p id="errorMessage" class="error-message"></p>
+          </div>
+
+          <div class="success-box hidden" id="successMessage"></div>
+
+          <div class="details-card hidden" id="summaryCard">
+            <h3>Enrolled Student Summary</h3>
+
+            <div class="details-grid">
+              <div class="detail-item">
+                <div class="detail-icon">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="detail-text">
+                  <span>Name</span>
+                  <h4 id="summaryName"></h4>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <div class="detail-icon">
+                  <i class="fa-solid fa-medal"></i>
+                </div>
+
+                <div class="detail-text">
+                  <span>Age</span>
+                  <h4 id="summaryAge"></h4>
+                </div>
+              </div>
+
+              <div class="detail-item">
+                <div class="detail-icon">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <div class="detail-text">
+                  <span>Grade Level</span>
+                  <h4 id="summaryGrade"></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- JAVASCRIPT REFERENCE -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

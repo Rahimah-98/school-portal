@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/logo.png"
+      type="image/x-icon" />
+    <title>Aurora Academy | Contact</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="navbar">
+        <a class="logo" href="/">
+          <img src="../assets/img/logo.png" alt="Logo" class="logo-img" />
+          <span class="logo-text">Aurora Academy</span>
+        </a>
+
+        <!-- MENU -->
+        <button class="menu-btn" id="menuBtn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="./courses.html">Courses</a></li>
+          <li><a href="./profile.html">Profile</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? We're here to help!</p>
+
+            <div class="info-item">
+              <span>
+                <i class="fa-solid fa-location-dot"></i>
+              </span>
+              <div>
+                <h4>Address</h4>
+                <p>123 Education Lane, Knowledge City, 10001</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <div>
+                <h4>Email</h4>
+                <p>info@brightfutureschool.edu</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span><i class="fa-solid fa-phone"></i></span>
+              <div>
+                <h4>Phone</h4>
+                <p>+92 300 1234567</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span><i class="fa-solid fa-clock"></i></span>
+              <div>
+                <h4>Working Hours</h4>
+                <p>Mon - Fri: 8:00 AM - 4:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form class="">
+              <div class="row">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="John Doe" />
+
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="johndoe@example.com" />
+
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Write your message here..."
+                  rows="5"></textarea>
+
+                <button type="submit" class="message-btn" id="messageBtn">
+                  Send Message <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+
+            <div class="feedback-message" id="feedbackMessage"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- JAVASCRIPT REFERENCE -->
+    <script src="../js/contact.js"></script>
+  </body>
+</html>

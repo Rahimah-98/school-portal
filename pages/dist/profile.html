@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/logo.png"
+      type="image/x-icon" />
+    <title>Aurora Academy | Profile</title>
+
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="navbar">
+        <a class="logo" href="/">
+          <img src="../assets/img/logo.png" alt="Logo" class="logo-img" />
+          <span class="logo-text">Aurora Academy</span>
+        </a>
+
+        <!-- MENU -->
+        <button class="menu-btn" id="menuBtn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/">Home</a></li>
+          <li><a href="./courses.html">Courses</a></li>
+          <li><a href="./profile.html">Profile</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main profile-page">
+      <div class="page-title">
+        <div class="icon-circle">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+
+        <h1>Student Profile</h1>
+      </div>
+
+      <section class="profile-card card">
+        <div class="profile-info">
+          <div class="profile-image">
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1000"
+              alt="Student" />
+          </div>
+          <h2>Rahimah Ansari</h2>
+        </div>
+
+        <div class="profile-content">
+          <div class="student-info">
+            <div class="info-box">
+              <i class="fa-regular fa-calendar purple"></i>
+
+              <div class="info-details">
+                <h3>Age</h3>
+                <p>18</p>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <i class="fa-solid fa-book-open green"></i>
+
+              <div class="info-details">
+                <h3>Grade</h3>
+                <p>10</p>
+              </div>
+            </div>
+
+            <div class="info-box">
+              <i class="fa-regular fa-user blue"></i>
+              <div class="info-details">
+                <h3>Status</h3>
+                <div class="status-badge" id="studentStatus">
+                  <span>Active</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="bottom-grid">
+        <section class="card">
+          <div class="section-title">
+            <div class="icon-circle">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <h3>Contact Information</h3>
+          </div>
+
+          <div class="button-group">
+            <button class="btn-blue" id="showEmail">Show Email</button>
+
+            <button class="btn-blue" id="showPhone">Show Phone</button>
+
+            <button class="btn-red" id="hideContact">Hide Contact Info</button>
+          </div>
+
+          <div class="contact-display" id="contactDisplay">
+            Contact information is hidden.
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="section-title">
+            <div class="icon-circle">
+              <i class="fa-solid fa-shield"></i>
+            </div>
+
+            <h3>Status Update</h3>
+          </div>
+
+          <div class="status-form">
+            <div class="current-status">
+              <h4>Current Status:</h4>
+              <div class="status-badge" id="studentStatus">
+                <span>Active</span>
+              </div>
+            </div>
+            <input
+              type="text"
+              id="statusInput"
+              placeholder="Enter new status" />
+
+            <button class="update-btn" id="updateStatus">Update Status</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- JAVASCRIPT REFERENCE -->
+    <script src="../js/profile.js"></script>
+  </body>
+</html>
